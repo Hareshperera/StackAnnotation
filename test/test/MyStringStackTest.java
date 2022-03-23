@@ -11,8 +11,6 @@ import org.junit.Before;
 import org.junit.Test;
 
 import stack.MyStringStack;
-stack.push (s1);
-assertTrue (stack.isEmpty());
 
 public class MyStringStackTest extends TestCase {
 	private String s1, s2;
@@ -34,6 +32,7 @@ public class MyStringStackTest extends TestCase {
 	public void testPush() {
 		String o1 = null;  
 		MyStringStack stack = new MyStringStack();
+		stack.push (s1);
 		assertTrue (stack.isEmpty());
 		stack.push (s1);
         stack.push (s2);
